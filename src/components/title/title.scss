@@ -1,0 +1,32 @@
+:root {
+    /* //sea wave   */
+      --clr-darkblue: #004581;
+      --clr-lightblue: #018abd;
+      --clr-turque: #97cbdc;
+      --clr-soft: #dde8f0;
+      --clr-gradient-sea: linear-gradient(-90deg, var(--clr-darkblue), var(--clr-turque));
+    /* memory */
+    --clr-darkpurple: #2e2f5b;
+    --clr-purple: #505581;
+    --clr-chick: #f4d35e;
+    --clr-cream: #faf0ca;
+    
+      --ff-fira: Fira Code, monospace;
+      --fw-bold: 800;
+      --fw-title: 400;
+      --fw-number: 800;
+      --fs-ultrabigger:52px;
+      --fs-bigger: 45px;
+      --fs-normal:16px;
+    }
+
+.title {
+    font-size: var(--fs-bigger);
+    color:var(--clr-cream)
+    
+}
+.title-fragment {
+    color: var(--clr-chick);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-ultrabigger);
+}

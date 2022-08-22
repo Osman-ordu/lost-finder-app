@@ -1,0 +1,39 @@
+:root {
+    /* memory */
+    --clr-darkpurple: #2e2f5b;
+    --clr-purple: #505581;
+    --clr-chick: #f4d35e;
+    --clr-cream: #faf0ca;
+    --clr-gradient-sea: linear-gradient(-30deg, var(--clr-darkpurple), var(--clr-chick));
+    --blur:0.2,
+    }
+    
+.footer{
+    font-size: 14px;
+    background:
+    var(--clr-darkpurple);
+    .fa-search{
+        font-size: 4rem;
+        color:var(--clr-chick);
+    }
+    .links{
+        ul {
+            list-style-type: none;
+        }
+        li a{
+          color: var(--clr-cream);
+          transition: color .2s;
+          text-decoration:none;
+          &:hover{
+            color:var(--clr-chick);
+
+            }
+        }
+      }   
+    .location{
+      i{margin: 10px;
+        font-size: 18px;
+    }
+    }
+    .copyright p{border-top:1px solid var(--clr-cream);} 
+  }

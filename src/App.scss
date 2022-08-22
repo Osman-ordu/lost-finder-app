@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root {
+/* //sea wave   */
+  --clr-darkblue: #004581;
+  --clr-lightblue: #018abd;
+  --clr-turque: #97cbdc;
+  --clr-soft: #dde8f0;
+  --clr-gradient-sea: linear-gradient(-90deg, var(--clr-darkblue), var(--clr-turque));
+/* memory */
+--clr-darkpurple: #2e2f5b;
+--clr-purple: #505581;
+--clr-chick: #f4d35e;
+--clr-cream: #faf0ca;
+
+  --ff-fira: Fira Code, monospace;
+  --fw-bold: 800;
+  --fw-title: 400;
+  --fw-number: 800;
+  --fs-bigger: 45px;
+  --fs-normal:14px;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  color: green;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-darkpurple);
+  font-family: var(--ff-fira);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
