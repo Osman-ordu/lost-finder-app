@@ -1,6 +1,7 @@
 import React from 'react'
 import './title.scss'
 
+
 const title = () => {
     return (
         <h1 className='title'>
