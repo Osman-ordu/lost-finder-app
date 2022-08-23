@@ -5,7 +5,7 @@ import './title.scss'
 const title = () => {
     return (
         <h1 className='title'>
-            lost <span className='title-fragment'>finder</span> app
+            find your <span className='title-fragment'>lost</span> robot
         </h1>
     )
 }

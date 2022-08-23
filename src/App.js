@@ -3,20 +3,21 @@ import './App.scss';
 import React, { useState } from 'react';
 import Title from './components/title/title';
 import Searchbox from './components/searchbox/searchbox';
-import ContentCards from './components/cards/contentCards';
 // import ContentButtons from './components/buttongroup/contentButtons'
 import Footer from './components/footer/footer';
+import CardContainer from './components/cards/cardContainer';
+import Main from './components/main/main';
 
 
 function App() {
-  const [userData, setUserData] = useState("");
+  const [search, setSearch] = useState('')
 
   return (
     <div className="App d-flex flex-column align-items-center p-4">
-      <Title/>
-      <Searchbox setUserData={ setUserData }/>
-      <ContentCards userData={ userData }/>
-      {/* <ContentButtons/> */}
+      <Title />
+      <Searchbox setSearch= { setSearch } />
+      <CardContainer search={  search } />
+      <Main/>
       <Footer />
 
 
