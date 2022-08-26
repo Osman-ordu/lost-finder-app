@@ -3,7 +3,6 @@ import './App.scss';
 import React, { useState } from 'react';
 import Title from './components/title/title';
 import Searchbox from './components/searchbox/searchbox';
-// import ContentButtons from './components/buttongroup/contentButtons'
 import Footer from './components/footer/footer';
 import CardContainer from './components/cards/cardContainer';
 import Main from './components/main/main';
