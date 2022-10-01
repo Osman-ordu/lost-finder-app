@@ -8,19 +8,23 @@ import CardContainer from './components/cards/cardContainer';
 import Main from './components/main/main';
 
 
-function App() {
+
+const App = () => {
   const [search, setSearch] = useState('')
 
   return (
-    <div className="App d-flex flex-column align-items-center p-4">
-      <Title />
-      <Searchbox setSearch= { setSearch } />
-      <CardContainer search={  search } />
-      <Main/>
-      <Footer />
+    <>
+      <div className="App d-flex flex-column align-items-center p-4">
+        <Title />
+        <Searchbox setSearch={setSearch} />
+        <CardContainer search={search} />
+        <Main />
+        <Footer />
 
 
-    </div>
+      </div>
+    </>
+
   );
 }
 

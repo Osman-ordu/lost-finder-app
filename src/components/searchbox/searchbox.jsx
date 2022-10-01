@@ -1,8 +1,9 @@
 import React from 'react'
 import { InputGroup, Input } from 'reactstrap'
 
-const Searchbox = (props) => {
-    const searchPerson = props.setSearch;
+const Searchbox = ({ setSearch }) => {
+
+    const searchPerson = setSearch;
 
     const searchRobot = (event) => {
         return searchPerson(event.target.value)

@@ -2,9 +2,9 @@ import React from 'react'
 import Card from './card'
 import { personData } from '../../mock/personData'
 
-const cardContainer = (props) => {
+const cardContainer = ({ search }) => {
 
-  const searchArea = props.search;
+  const searchArea = search;
 
   return (
     <>
@@ -18,7 +18,8 @@ const cardContainer = (props) => {
         }).map((person, index) => (
 
           searchArea !== '' ?
-            <Card key={index} first_name={person.first_name}
+            <Card
+              key={index} first_name={person.first_name}
               last_name={person.last_name} phone_number={person.phone_number}
               avatar={person.avatar} city={person.address.city}
               street_address={person.address.street_address} state={person.address.state}
